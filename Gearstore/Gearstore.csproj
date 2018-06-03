@@ -253,6 +253,14 @@
     <Compile Include="Migrations\201806031241235_second.Designer.cs">
       <DependentUpon>201806031241235_second.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806031547247_ssd.cs" />
+    <Compile Include="Migrations\201806031547247_ssd.Designer.cs">
+      <DependentUpon>201806031547247_ssd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806031549572_ssdd.cs" />
+    <Compile Include="Migrations\201806031549572_ssdd.Designer.cs">
+      <DependentUpon>201806031549572_ssdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -360,6 +368,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806031241235_second.resx">
       <DependentUpon>201806031241235_second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806031547247_ssd.resx">
+      <DependentUpon>201806031547247_ssd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806031549572_ssdd.resx">
+      <DependentUpon>201806031549572_ssdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

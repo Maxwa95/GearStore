@@ -37,7 +37,7 @@ namespace gearproj.Controllers
             {
                count = g.Count(),
                 id = g.Key
-            }).OrderByDescending(k => k.count).Take(4).ToList();
+            }).OrderByDescending(k => k.count).Take(6).ToList();
             if (bestproducts == null)
             {
                 return BadRequest();
@@ -51,8 +51,33 @@ namespace gearproj.Controllers
             return Ok(prods);
         }
 
-   
-      
+
+        [HttpGet,Route("api/clientproducts/last")]
+        public IHttpActionResult Lastprods()
+        {
+            var lastprods = db.products.OrderByDescending(a => a.productId).Take(6).ToList();
+            if (lastprods == null)
+            {
+                return BadRequest();
+            }
+            else
+                return Ok(lastprods);
+        }
+
+        [HttpGet, Route("api/clientproducts/offers")]
+        public IHttpActionResult offers()
+        {
+            var disprods = db.products.OrderByDescending(a => a.Discount).Take(5).ToList();
+            if (disprods == null)
+            {
+                return BadRequest();
+            }
+            else
+                return Ok(disprods);
+        }
+
+
+
         [HttpGet]
         public IHttpActionResult Getprod(int id)
         {

@@ -18,14 +18,25 @@ namespace gearproj.Controllers
    
         public IHttpActionResult Get(int id)
         {
-           var p = db.products.FirstOrDefault(a => a.productId == id);
-            var f = db.Feedbacks.Where(a => a.Productid == id).ToList();
-            var others = db.products.Where(a => a.CategoryId == p.CategoryId && a.productId != p.productId).Take(3).ToList();
-            if (p == null)
+            var product = db.products.FirstOrDefault(a => a.productId == id);
+            //   var f = db.Feedbacks.Where(a => a.Productid == id).ToList();
+            var otherproducts = db.products.Where(a => a.CategoryId == product.CategoryId && a.productId != product.productId).Take(3).ToList();
+            var comments = db.Users.Join(db.Feedbacks, u => u.Id, feed => feed.Userid, (u, feed) => new
+            {
+                FirstName = u.FirstName,
+                LastName = u.LastName,
+                Comment = feed.Comment,
+                Productid = feed.Productid
+            }
+
+                ).Where(a => a.Productid == id);  // your starting point - table in the "from" statement
+
+            if (product == null||otherproducts==null ||comments==null )
             {
                 return BadRequest();
-            }else
-            return Ok(new { p, others,f });
+            }
+            else
+                return Ok(new { product, otherproducts, comments });
         }
         
     }
