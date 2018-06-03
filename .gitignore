@@ -21,3 +21,5 @@ Gearstore/obj/Release/Gearstore.csproj.FileListAbsolute.txt
 *.Cache
 Gearstore/bin/Gearstore.dll
 Gearstore/bin/Gearstore.pdb
+*.Cache
+*.pdb

@@ -15,14 +15,14 @@ namespace gearproj.Controllers
         // GET: api/Search/{key:string}
         public IHttpActionResult GetByCharacter(string key)
         {
-            List<Product> ProductsResult = db.products.Where(a=>a.ProductName.Contains(key)).ToList<Product>();
+            var ProductsResult = db.products.Where(a=>a.ProductName.Contains(key)).Select(a=>new {ProductName=a.ProductName }).ToList();
             List<Model> ModelsResult = db.Models.Where(a => a.ModelName.Contains(key)).ToList<Model>();
             List<Brand> BrandsResult = db.Brands.Where(a => a.BrandName.Contains(key)).ToList<Brand>();
             if(BrandsResult !=null)
             {
                 foreach(var bd in BrandsResult)
                 {
-                    List<Product> productsperbrand = db.products.Where(a => a.BrandId == bd.BrandId).ToList<Product>();
+                    var productsperbrand = db.products.Where(a => a.BrandId == bd.BrandId).Select(a => new { ProductName = a.ProductName }).ToList();
                     ProductsResult.AddRange(productsperbrand);
                 }
             }
@@ -35,7 +35,7 @@ namespace gearproj.Controllers
                     {
                         foreach (var mpobj in Modelproducts)
                         {
-                            List<Product> productsperModel = db.products.Where(a => a.productId == mpobj.productId).ToList<Product>();
+                            var productsperModel = db.products.Where(a => a.productId == mpobj.productId).Select(a => new { ProductName = a.ProductName }).ToList();
                             ProductsResult.AddRange(productsperModel);
                         }
                     }
