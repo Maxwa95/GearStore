@@ -15,3 +15,9 @@ Gearstore/obj/Release/_WPPLastBuildInfo.txt
 Gearstore/obj/Release/CSAutoParameterize.parameters.xml
 Gearstore/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache
 Gearstore/obj/Release/Gearstore.csproj.FileListAbsolute.txt
+*.Cache
+*.dll
+*.dll
+*.Cache
+Gearstore/bin/Gearstore.dll
+Gearstore/bin/Gearstore.pdb

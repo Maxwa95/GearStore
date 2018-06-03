@@ -20,6 +20,9 @@ namespace gearproj.Models
         [Required]
         [StringLength(45, MinimumLength = 2)]
         public string PlaceOfOrigin { get; set; }
+        public string state { get; set; }
+       
+        public string Manufacturer { get; set; }
         [Required]
         public DateTime DateOfPublish { get; set; }
         
