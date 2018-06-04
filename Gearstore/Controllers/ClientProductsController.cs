@@ -13,7 +13,7 @@ namespace gearproj.Controllers
     public class ClientProductsController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
-<<<<<<< HEAD
+
 
         //[HttpGet, Route("api/page")]
         //public IHttpActionResult Get(int Pagenum = 1, string Productname = "*", string Brandnames = "*", string Categories = "*")
@@ -85,7 +85,7 @@ namespace gearproj.Controllers
         //    }
 
         //}
-=======
+
         [HttpGet, Route("api/ClientProducts")]
         public IHttpActionResult Get(int pagenum ,string name=null)
         {
@@ -117,7 +117,7 @@ namespace gearproj.Controllers
             else
                 return Ok(prods);
         }
->>>>>>> 752be14d5cce84701d3b6b22e27ae548e8f62199
+
 
 
         //get top selling products
