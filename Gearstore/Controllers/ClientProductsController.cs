@@ -1,5 +1,4 @@
-﻿
-using gearproj.Models;
+﻿using gearproj.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +13,7 @@ namespace gearproj.Controllers
     public class ClientProductsController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
+<<<<<<< HEAD
 
         //[HttpGet, Route("api/page")]
         //public IHttpActionResult Get(int Pagenum = 1, string Productname = "*", string Brandnames = "*", string Categories = "*")
@@ -85,6 +85,38 @@ namespace gearproj.Controllers
         //    }
 
         //}
+=======
+        [HttpGet, Route("api/ClientProducts")]
+        public IHttpActionResult Get(int pagenum ,string name=null)
+        {
+         int pgn = pagenum < 0 ? 1 :  pagenum > Math.Ceiling(db.products.Count() / 8.0) ?  (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum ;
+            int count = db.products.Count() < pgn*8 ? ((pgn-1) * 8 )  : (pgn-1)*8 ;
+            var prods = db.products.Where(a=>a.ProductName==name||name==null).OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
+            if (prods == null)
+            {
+                return BadRequest();
+            }
+            else
+             return Ok(prods);
+        }
+        [HttpGet, Route("api/filterClientProducts")]
+        public IHttpActionResult Get(int pagenum,string catename=" ",string  brandsname=" ")
+        {
+            string[] brands = brandsname.Split(',');
+            string[] catnames = catename.Split(',');
+            var brandsid = db.Brands.Where(a => brands.Contains(a.BrandName)).Select(a => a.BrandId).ToList();
+            var cats = db.Categories.Where(a => catnames.Contains(a.CategoriesName)).Select(a=>a.CategoriesId).ToList();
+            int pgn = pagenum < 0 ? 1 : pagenum > Math.Ceiling(db.products.Count() / 8.0) ? (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum;
+            int count = db.products.Count() < pgn * 8 ? ((pgn - 1) * 8) : (pgn - 1) * 8;
+            var prods = db.products.Where(a=>cats.Contains(a.CategoryId)|| brandsid.Contains(a.BrandId)).OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
+            if (prods == null)
+            {
+                return BadRequest();
+            }
+            else
+                return Ok(prods);
+        }
+>>>>>>> 752be14d5cce84701d3b6b22e27ae548e8f62199
 
 
         //get top selling products
