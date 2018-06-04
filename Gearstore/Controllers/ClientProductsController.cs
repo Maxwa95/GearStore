@@ -1,4 +1,5 @@
-﻿using gearproj.Models;
+﻿using Gearstore.Models;
+using gearproj.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,17 +15,62 @@ namespace gearproj.Controllers
     {
         ApplicationDbContext db = new ApplicationDbContext();
         
-        public IHttpActionResult Get(int pagenum)
+        public IHttpActionResult Get(int Pagenum,string Productname,string Brandnames,string Categories)
         {
-         int pgn = pagenum < 0 ? 1 :  pagenum > Math.Ceiling(db.products.Count() / 8.0) ?  (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum ;
+            List<Product> result = new List<Product>();
+            List<Product> result2 = new List<Product>();
+            List<Product> result3 = new List<Product>();
+            List<Product> result4 = new List<Product>();
+
+            string[] bnames = Brandnames.Split(',');
+            string[] cnames = Categories.Split(',');
+            Brand b = new Brand();
+            Categories c = new Categories();
+
+            int pgn = Pagenum < 0 ? 1 :  Pagenum > Math.Ceiling(db.products.Count() / 8.0) ?  (int)Math.Ceiling(db.products.Count() / 8.0) : Pagenum ;
             int count = db.products.Count() < pgn*8 ? ((pgn-1) * 8 )  : (pgn-1)*8 ;
-            var prods = db.products.OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
-            if (prods == null)
+
+            result = db.products.OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
+            result2 = db.products.Where(a => a.ProductName == Productname).Take(8).ToList();
+            
+            foreach (var item in bnames)
+            {
+                b = db.Brands.FirstOrDefault(a => a.BrandName == item);
+                result3.AddRange(db.products.Where(a => a.BrandId == b.BrandId).ToList());
+            }
+            foreach (var item in cnames)
+            {
+                c = db.Categories.FirstOrDefault(a => a.CategoriesName == item);
+                result3.AddRange(db.products.Where(a => a.CategoryId == c.CategoriesId).ToList());
+            }
+            
+            
+
+            if (result == null)
             {
                 return BadRequest();
             }
             else
-             return Ok(prods);
+            if (result2.Capacity > 0 && result3.Capacity == 0 && result4.Capacity == 0 )
+            {
+                return Ok(result2.Take(8).ToList());
+            }
+            else if(result3.Capacity > 0 && result4.Capacity == 0)
+            {
+                return Ok(result3);
+            }
+            else if(result3.Capacity > 0 && result4.Capacity > 0)
+            {
+                return Ok(result3.Where(a=>a.CategoryId == c.CategoriesId).ToList());
+            }
+            else if(result4.Capacity > 0)
+            {
+                return Ok(result4);
+            }else
+            {
+               return Ok(result);
+            }
+            
         }
         
 
