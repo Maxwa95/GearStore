@@ -19,7 +19,7 @@ namespace gearproj.Controllers
 
             var ProductsResult = db.products.Where(a=>a.ProductName.Contains(key)).Select(a=>new {ProductName=a.ProductName }).Take(4).ToList();
 
-            List<Product> catproductResult = db.products.Where(a=>a.CategoryId == cat.CategoriesId).Take(3).ToList();
+            var catproductResult = db.products.Where(a=>a.CategoryId == cat.CategoriesId).Select(a=> new { ProductName = a.ProductName }).Take(3).ToList();
 
             //List<Brand> BrandsResult = db.Brands.Where(a => a.BrandName.Contains(key)).ToList<Brand>();
             //if(BrandsResult !=null)
