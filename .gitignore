@@ -23,3 +23,7 @@ Gearstore/bin/Gearstore.dll
 Gearstore/bin/Gearstore.pdb
 *.Cache
 *.pdb
+*.cache
+*.cache
+*.resources
+*.pdb

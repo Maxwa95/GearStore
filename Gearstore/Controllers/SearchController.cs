@@ -43,6 +43,26 @@ namespace gearproj.Controllers
             }
             return Ok(ProductsResult);
         }
-        
+        [HttpGet, Route("api/Getproductsbyname/{name:alpha}")]
+        public IHttpActionResult Getproductsbyname(string name)
+        {
+     var products = db.products.Where(a => a.ProductName == name).ToList();
+            if (products == null)
+            {
+                return BadRequest();
+            }
+            return Ok(products);
+        }
+        [HttpGet, Route("api/Getproductsbynameandcat/{name:alpha}/{catid:number}")]
+        public IHttpActionResult Getproductsbynameandcat(string name ,int catid)
+        {
+            var products = db.products.Where(a => a.ProductName == name && a.CategoryId==catid).ToList();
+            if (products == null)
+            {
+                return BadRequest();
+            }
+            return Ok(products);
+        }
+
     }
 }
