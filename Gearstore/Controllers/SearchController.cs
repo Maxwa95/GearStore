@@ -57,7 +57,7 @@ namespace gearproj.Controllers
             }
             return Ok(products);
         }
-        [HttpGet, Route("api/Getproductsbynameandcat/{name:alpha}/{catid:number}")]
+        [HttpGet, Route("api/Getproductsbynameandcat/{name:alpha}/{catid:int}")]
         public IHttpActionResult Getproductsbynameandcat(string name ,int catid)
         {
             var products = db.products.Where(a => a.ProductName == name && a.CategoryId==catid).ToList();
