@@ -18,10 +18,12 @@ namespace gearproj.Controllers
         {
             return Request.CreateResponse(HttpStatusCode.OK,db.Brands.Select(i => new { i.BrandName,i.ImagePath }).ToList());
         }
-       [Route("api/brandslist")]
-        public HttpResponseMessage Getallbrands()
+       [Route("api/getfilterdata")]
+        public IHttpActionResult Getfilterdata()
         {
-            return Request.CreateResponse(HttpStatusCode.OK, db.Brands.Select(i => new { i.BrandName, i.BrandId }).ToList());
+            //  return Request.CreateResponse(HttpStatusCode.OK, db.Brands.Select(i => new { i.BrandName, i.BrandId }).ToList());
+           return Ok(new { Brands =  db.Brands.ToList() , Categories  = db.Categories.ToList() });
+
         }
 
 
