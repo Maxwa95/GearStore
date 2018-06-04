@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\obj\Release\Package\PackageTmp" />
-  <setAcl path="c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <IisApp path="D:\gearapiv2\gs\Gearstore\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\gearapiv2\gs\Gearstore\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\gearapiv2\gs\Gearstore\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>
