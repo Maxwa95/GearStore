@@ -14,74 +14,78 @@ namespace gearproj.Controllers
     public class ClientProductsController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
-        [HttpGet,Route("api/page")]
-        public IHttpActionResult Get(int Pagenum=1,string Productname="*",string Brandnames="*",string Categories="*")
-        {
-            
-            List<Product> result = new List<Product>();
-            List<Product> result2 = new List<Product>();
-            List<Product> result3 = new List<Product>();
-            List<Product> result4 = new List<Product>();
 
-            string[] bnames = Brandnames.Split(',');
-            string[] cnames = Categories.Split(',');
-            Brand b = new Brand();
-            Categories c = new Categories();
+        //[HttpGet, Route("api/page")]
+        //public IHttpActionResult Get(int Pagenum = 1, string Productname = "*", string Brandnames = "*", string Categories = "*")
+        //{
+        //    List<Product> result = new List<Product>();
+        //    List<Product> result2 = new List<Product>();
+        //    List<Product> result3 = new List<Product>();
+        //    List<Product> result4 = new List<Product>();
 
-            int pgn = Pagenum < 0 ? 1 :  Pagenum > Math.Ceiling(db.products.Count() / 8.0) ?  (int)Math.Ceiling(db.products.Count() / 8.0) : Pagenum ;
-            int count = db.products.Count() < pgn*8 ? ((pgn-1) * 8 )  : (pgn-1)*8 ;
+        //    string[] bnames = Brandnames.Split(',');
+        //    string[] cnames = Categories.Split(',');
+        //    Brand b = new Brand();
+        //    Categories c = new Categories();
 
-            result = db.products.OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
-            result2 = db.products.Where(a => a.ProductName.Contains(Productname)).Take(8).ToList();
-            
-            foreach (var item in bnames)
-            {
-                b = db.Brands.FirstOrDefault(a => a.BrandName == item);
-                if (b!=null)
-                {
-                    result3.AddRange(db.products.Where(a => a.BrandId == b.BrandId).ToList());
-                }
+        //    int pgn = Pagenum < 0 ? 1 : Pagenum > Math.Ceiling(db.products.Count() / 8.0) ? (int)Math.Ceiling(db.products.Count() / 8.0) : Pagenum;
+        //    int count = db.products.Count() < pgn * 8 ? ((pgn - 1) * 8) : (pgn - 1) * 8;
+
+        //    result = db.products.OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
+        //    result2 = db.products.Where(a => a.ProductName.Contains(Productname)).Take(8).ToList();
+
+        //    foreach (var item in bnames)
+        //    {
+        //        b = db.Brands.FirstOrDefault(a => a.BrandName == item);
+        //        if (b != null)
+        //        {
+        //            result3.AddRange(db.products.Where(a => a.BrandId == b.BrandId).ToList());
+        //        }
                 
-            }
-            foreach (var item in cnames)
-            {
-                c = db.Categories.FirstOrDefault(a => a.CategoriesName == item);
-                if (c!=null)
-                {
-                    result3.AddRange(db.products.Where(a => a.CategoryId == c.CategoriesId).ToList());
-                }
-                
-            }
-            
-            
 
-            if (result == null)
-            {
-                return BadRequest();
-            }
-            else
-            if (result2.Capacity > 0 && result3.Capacity == 0 && result4.Capacity == 0 )
-            {
-                return Ok(result2.Take(8).ToList());
-            }
-            else if(result3.Capacity > 0 && result4.Capacity == 0)
-            {
-                return Ok(result3);
-            }
-            else if(result3.Capacity > 0 && result4.Capacity > 0)
-            {
-                return Ok(result3.Where(a=>a.CategoryId == c.CategoriesId).ToList());
-            }
-            else if(result4.Capacity > 0)
-            {
-                return Ok(result4);
-            }else
-            {
-               return Ok(result);
-            }
-            
-        }
-        
+        //    }
+        //    foreach (var item in cnames)
+        //    {
+        //        c = db.Categories.FirstOrDefault(a => a.CategoriesName == item);
+        //        if (c != null)
+        //        {
+        //            result3.AddRange(db.products.Where(a => a.CategoryId == c.CategoriesId).ToList());
+        //        }
+
+
+        //    }
+
+
+
+        //    if (result == null)
+        //    {
+        //        return BadRequest();
+        //    }
+        //    else
+        //    if (result2.Capacity > 0 && result3.Capacity == 0 && result4.Capacity == 0)
+        //    {
+        //        return Ok(result2.Take(8).ToList());
+        //    }
+        //    else if (result3.Capacity > 0 && result4.Capacity == 0)
+        //    {
+        //        return Ok(result3);
+        //    }
+        //    else if (result3.Capacity > 0 && result4.Capacity > 0)
+        //    {
+               
+        //        return Ok(result3.Where(a => a.CategoryId == c.CategoriesId && a.BrandId == b.BrandId).ToList());
+        //    }
+        //    else if (result4.Capacity > 0)
+        //    {
+        //        return Ok(result4);
+        //    }
+        //    else
+        //    {
+        //        return Ok(result);
+        //    }
+
+        //}
+
 
         //get top selling products
 
