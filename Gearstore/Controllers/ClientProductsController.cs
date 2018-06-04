@@ -1,4 +1,4 @@
-﻿using Gearstore.Models;
+﻿
 using gearproj.Models;
 using System;
 using System.Collections.Generic;
@@ -14,9 +14,10 @@ namespace gearproj.Controllers
     public class ClientProductsController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
-        
-        public IHttpActionResult Get(int Pagenum,string Productname,string Brandnames,string Categories)
+        [HttpGet,Route("api/page")]
+        public IHttpActionResult Get(int Pagenum=1,string Productname="*",string Brandnames="*",string Categories="*")
         {
+            
             List<Product> result = new List<Product>();
             List<Product> result2 = new List<Product>();
             List<Product> result3 = new List<Product>();
@@ -31,17 +32,25 @@ namespace gearproj.Controllers
             int count = db.products.Count() < pgn*8 ? ((pgn-1) * 8 )  : (pgn-1)*8 ;
 
             result = db.products.OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
-            result2 = db.products.Where(a => a.ProductName == Productname).Take(8).ToList();
+            result2 = db.products.Where(a => a.ProductName.Contains(Productname)).Take(8).ToList();
             
             foreach (var item in bnames)
             {
                 b = db.Brands.FirstOrDefault(a => a.BrandName == item);
-                result3.AddRange(db.products.Where(a => a.BrandId == b.BrandId).ToList());
+                if (b!=null)
+                {
+                    result3.AddRange(db.products.Where(a => a.BrandId == b.BrandId).ToList());
+                }
+                
             }
             foreach (var item in cnames)
             {
                 c = db.Categories.FirstOrDefault(a => a.CategoriesName == item);
-                result3.AddRange(db.products.Where(a => a.CategoryId == c.CategoriesId).ToList());
+                if (c!=null)
+                {
+                    result3.AddRange(db.products.Where(a => a.CategoryId == c.CategoriesId).ToList());
+                }
+                
             }
             
             
