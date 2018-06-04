@@ -15,33 +15,37 @@ namespace gearproj.Controllers
         // GET: api/Search/{key:string}
         public IHttpActionResult GetByCharacter(string key)
         {
-            var ProductsResult = db.products.Where(a=>a.ProductName.Contains(key)).Select(a=>new {ProductName=a.ProductName }).ToList();
-            List<Model> ModelsResult = db.Models.Where(a => a.ModelName.Contains(key)).ToList<Model>();
-            List<Brand> BrandsResult = db.Brands.Where(a => a.BrandName.Contains(key)).ToList<Brand>();
-            if(BrandsResult !=null)
-            {
-                foreach(var bd in BrandsResult)
-                {
-                    var productsperbrand = db.products.Where(a => a.BrandId == bd.BrandId).Select(a => new { ProductName = a.ProductName }).ToList();
-                    ProductsResult.AddRange(productsperbrand);
-                }
-            }
-            if (ModelsResult != null)
-            {
-                foreach (var bm in ModelsResult)
-                {
-                    List<modelsproducts> Modelproducts = db.modelsproducts.Where(a => a.modelId == bm.ModelId).ToList<modelsproducts>();
-                    if (Modelproducts != null)
-                    {
-                        foreach (var mpobj in Modelproducts)
-                        {
-                            var productsperModel = db.products.Where(a => a.productId == mpobj.productId).Select(a => new { ProductName = a.ProductName }).ToList();
-                            ProductsResult.AddRange(productsperModel);
-                        }
-                    }
-                }
-            }
-            return Ok(ProductsResult);
+            Categories cat = db.Categories.FirstOrDefault(a=>a.CategoriesName.Contains(key));
+
+            var ProductsResult = db.products.Where(a=>a.ProductName.Contains(key)).Select(a=>new {ProductName=a.ProductName }).Take(4).ToList();
+
+            List<Product> catproductResult = db.products.Where(a=>a.CategoryId == cat.CategoriesId).Take(3).ToList();
+
+            //List<Brand> BrandsResult = db.Brands.Where(a => a.BrandName.Contains(key)).ToList<Brand>();
+            //if(BrandsResult !=null)
+            //{
+            //    foreach(var bd in BrandsResult)
+            //    {
+            //        var productsperbrand = db.products.Where(a => a.BrandId == bd.BrandId).Select(a => new { ProductName = a.ProductName }).ToList();
+            //        ProductsResult.AddRange(productsperbrand);
+            //    }
+            //}
+            //if (ModelsResult != null)
+            //{
+            //    foreach (var bm in ModelsResult)
+            //    {
+            //        List<modelsproducts> Modelproducts = db.modelsproducts.Where(a => a.modelId == bm.ModelId).ToList<modelsproducts>();
+            //        if (Modelproducts != null)
+            //        {
+            //            foreach (var mpobj in Modelproducts)
+            //            {
+            //                var productsperModel = db.products.Where(a => a.productId == mpobj.productId).Select(a => new { ProductName = a.ProductName }).ToList();
+            //                ProductsResult.AddRange(productsperModel);
+            //            }
+            //        }
+            //    }
+            //}
+            return Ok(new { catid = cat.CategoriesId,catname = cat.CategoriesName , productsincat = catproductResult , productsmatch =  ProductsResult });
         }
         
     }
