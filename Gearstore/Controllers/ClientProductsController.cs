@@ -89,6 +89,7 @@ namespace gearproj.Controllers
         [HttpGet, Route("api/ClientProducts")]
         public IHttpActionResult Get(int pagenum ,string name=null)
         {
+            if (name == "*") name = null;
          int pgn = pagenum < 0 ? 1 :  pagenum > Math.Ceiling(db.products.Count() / 8.0) ?  (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum ;
             int count = db.products.Count() < pgn*8 ? ((pgn-1) * 8 )  : (pgn-1)*8 ;
             var prods = db.products.Where(a=>a.ProductName==name||name==null).OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
@@ -100,7 +101,7 @@ namespace gearproj.Controllers
              return Ok(prods);
         }
         [HttpGet, Route("api/filterClientProducts")]
-        public IHttpActionResult Get(int pagenum,string catename=" ",string  brandsname=" ")
+        public IHttpActionResult Get(int pagenum,string catename="",string  brandsname="")
         {
             string[] brands = brandsname.Split(',');
             string[] catnames = catename.Split(',');
@@ -108,7 +109,7 @@ namespace gearproj.Controllers
             var cats = db.Categories.Where(a => catnames.Contains(a.CategoriesName)).Select(a=>a.CategoriesId).ToList();
             int pgn = pagenum < 0 ? 1 : pagenum > Math.Ceiling(db.products.Count() / 8.0) ? (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum;
             int count = db.products.Count() < pgn * 8 ? ((pgn - 1) * 8) : (pgn - 1) * 8;
-            var prods = db.products.Where(a=>cats.Contains(a.CategoryId)|| brandsid.Contains(a.BrandId)).OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
+            var prods = db.products.Where(a=>cats.Contains(a.CategoryId)|| brandsid.Contains(a.BrandId)||brandsid==null||catnames==null).OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
             if (prods == null)
             {
                 return BadRequest();
