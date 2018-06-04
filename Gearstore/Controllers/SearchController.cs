@@ -15,11 +15,11 @@ namespace gearproj.Controllers
         // GET: api/Search/{key:string}
         public IHttpActionResult GetByCharacter(string key)
         {
-            Categories cat = db.Categories.FirstOrDefault(a=>a.CategoriesName.Contains(key));
+            List<int> cat = db.Categories.Where(a => a.CategoriesName.Contains(key)).Select(a=> a.CategoriesId ).ToList();
 
             var ProductsResult = db.products.Where(a=>a.ProductName.Contains(key)).Select(a=>new {ProductName=a.ProductName }).Take(4).ToList();
 
-            var catproductResult = db.products.Where(a=>a.CategoryId == cat.CategoriesId).Select(a=> new { ProductName = a.ProductName }).Take(3).ToList();
+            var catproductResult = db.products.Where(a=> cat.Contains(a.CategoryId)).Select(a=> new { ProductName = a.ProductName }).Take(3).ToList();
 
             //List<Brand> BrandsResult = db.Brands.Where(a => a.BrandName.Contains(key)).ToList<Brand>();
             //if(BrandsResult !=null)
@@ -45,7 +45,7 @@ namespace gearproj.Controllers
             //        }
             //    }
             //}
-            return Ok(new { catid = cat.CategoriesId,catname = cat.CategoriesName , productsincat = catproductResult , productsmatch =  ProductsResult });
+            return Ok(new { catsmatch = db.Categories.Where(a=> cat.Contains(a.CategoriesId)).Select(a=> new {a.CategoriesId , a.CategoriesName } ).ToList() , productsincat = catproductResult , productsmatch =  ProductsResult });
         }
         [HttpGet, Route("api/Getproductsbyname/{name:alpha}")]
         public IHttpActionResult Getproductsbyname(string name)
