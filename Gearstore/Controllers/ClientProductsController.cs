@@ -30,14 +30,11 @@ namespace gearproj.Controllers
         [HttpGet, Route("api/filterClientProducts")]
         public IHttpActionResult Get(int pagenum,string catename="",string  brandsname="")
         {
-<<<<<<< HEAD
-=======
             if (catename == null)
             {
                 catename = "*";
             }
            
->>>>>>> 6517d854cf17be8b57890bbd80c1dd4126ea9de9
             string[] brands = brandsname.Split(',');
             string[] catnames = catename.Split(',');
             var brandsid = db.Brands.Where(a => brands.Contains(a.BrandName)).Select(a => a.BrandId).ToList();
