@@ -17,9 +17,9 @@ namespace gearproj.Controllers
         public IHttpActionResult Get(int pagenum ,string name=null)
         {
             if (name == "*") { name = null; }
-         int pgn = pagenum < 0 ? 1 :  pagenum > Math.Ceiling(db.products.Count() / 8.0) ?  (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum ;
-            int count = db.products.Count() < pgn*8 ? ((pgn-1) * 8 )  : (pgn-1)*8 ;
-            var prods = db.products.Where(a=>a.ProductName==name||name==null).OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
+         int pgn = pagenum < 0 ? 1 :  pagenum > Math.Ceiling(db.products.Count() / 9.0) ?  (int)Math.Ceiling(db.products.Count() / 9.0) : pagenum ;
+            int count = db.products.Count() < pgn*9 ? ((pgn-1) * 9 )  : (pgn-1)*9 ;
+            var prods = db.products.Where(a=>a.ProductName==name||name==null).OrderByDescending(k => k.productId).Skip(count).Take(9).ToList();
             if (prods == null)
             {
                 return BadRequest();
@@ -30,10 +30,7 @@ namespace gearproj.Controllers
         [HttpGet, Route("api/filterClientProducts")]
         public IHttpActionResult Get(int pagenum,string catename="",string  brandsname="")
         {
-<<<<<<< HEAD
-=======
 
->>>>>>> df87bdc6e84450bb4566a46ade604a558b98cf07
             if (catename == null)
             {
                 catename = "*";
