@@ -30,6 +30,10 @@ namespace gearproj.Controllers
         [HttpGet, Route("api/filterClientProducts")]
         public IHttpActionResult Get(int pagenum,string catename="",string  brandsname="")
         {
+<<<<<<< HEAD
+=======
+
+>>>>>>> df87bdc6e84450bb4566a46ade604a558b98cf07
             if (catename == null)
             {
                 catename = "*";

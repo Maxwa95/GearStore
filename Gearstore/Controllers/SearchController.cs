@@ -11,7 +11,7 @@ namespace gearproj.Controllers
     public class SearchController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
-        [HttpGet, Route("api/Search/{key:alpha}")]
+        [HttpGet, Route("api/Search/{key}")]
         // GET: api/Search/{key:string}
         public IHttpActionResult GetByCharacter(string key)
         {
