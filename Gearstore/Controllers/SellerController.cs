@@ -64,7 +64,7 @@ namespace gearproj.Controllers
         //}
        
         [HttpPost, Route("api/seller/product")]
-        public IHttpActionResult Post([FromBody]Product product)
+        public async Task<IHttpActionResult> Post([FromBody]Product product)
         {
 
             if (ModelState.IsValid)
@@ -120,8 +120,8 @@ namespace gearproj.Controllers
             catch (Exception ex)
             {
                 var res = string.Format("some Message");
-                return NotFound();
-            }
+                return BadRequest(res);
+                }
         
 
 
