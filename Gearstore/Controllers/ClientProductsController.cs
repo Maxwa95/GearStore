@@ -107,7 +107,7 @@ namespace gearproj.Controllers
             {
                 catename = "*";
             }
-            
+           
             string[] brands = brandsname.Split(',');
             string[] catnames = catename.Split(',');
             var brandsid = db.Brands.Where(a => brands.Contains(a.BrandName)).Select(a => a.BrandId).ToList();
@@ -189,6 +189,7 @@ namespace gearproj.Controllers
             {
                 return BadRequest();
             }
+            //hi
             else
             return Ok(new {res,others});
         }
