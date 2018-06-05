@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Threading.Tasks;
-using System.Web;
 using System.Web.Http;
 
 namespace gearproj.Controllers
@@ -46,29 +44,15 @@ namespace gearproj.Controllers
                 return BadRequest();
         }
         
-        //// POST: api/Seller
-        //[Authorize(Roles = "Seller")]
-        //[HttpPost, Route("api/seller/product")]
-        //public IHttpActionResult Post([FromBody]Product product)
-        //{
-           
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.products.Add(product);
-        //        db.SaveChanges();
-        //        return Ok(db.products.ToList());
-        //    }
-        //    else
-        //        return BadRequest();
-
-        //}
-       
+        // POST: api/Seller
+        [Authorize(Roles = "Seller")]
         [HttpPost, Route("api/seller/product")]
         public async Task<IHttpActionResult> Post([FromBody]Product product)
         {
-
+           
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
                 Dictionary<string, object> dict = new Dictionary<string, object>();
                 try
                 { 
@@ -126,6 +110,9 @@ namespace gearproj.Controllers
 
 
         db.products.Add(product);
+=======
+                db.products.Add(product);
+>>>>>>> 74d157ef1a28edd78570a6764f01450e93d5cbf6
                 db.SaveChanges();
                 return Ok(db.products.ToList());
             }
@@ -133,7 +120,6 @@ namespace gearproj.Controllers
                 return BadRequest();
 
         }
-
 
         // PUT: api/Seller/5
         [Authorize(Roles = "Seller")]

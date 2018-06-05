@@ -1,0 +1,443 @@
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\obj\Debug\Gearstore.csprojResolveAssemblyReference.cache
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\ApplicationInsights.config
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\csc.exe
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\csc.exe.config
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\csc.rsp
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\csi.exe
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\csi.rsp
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\System.AppContext.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\System.Collections.Immutable.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\System.IO.FileSystem.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\vbc.exe
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\vbc.exe.config
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\vbc.rsp
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\VBCSCompiler.exe
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\roslyn\VBCSCompiler.exe.config
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Gearstore.dll.config
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Gearstore.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Gearstore.pdb
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Antlr3.Runtime.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\EntityFramework.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\EntityFramework.SqlServer.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.Web.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.WindowsServer.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.ApplicationInsights.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Google.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Web.Infrastructure.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Newtonsoft.Json.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Owin.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Net.Http.Formatting.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Helpers.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Http.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Http.Owin.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Http.WebHost.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Mvc.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Optimization.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Razor.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.WebPages.Deployment.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.WebPages.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.WebPages.Razor.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\WebGrease.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Newtonsoft.Json.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Net.Http.Formatting.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Helpers.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Http.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Http.WebHost.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Mvc.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Optimization.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Razor.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.WebPages.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.WebPages.Deployment.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.WebPages.Razor.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Antlr3.Runtime.pdb
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\EntityFramework.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\EntityFramework.SqlServer.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Google.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\System.Web.Http.Owin.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.ApplicationInsights.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.WindowsServer.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\bin\Microsoft.AI.Web.xml
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\obj\Debug\Gearstore.dll
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\obj\Debug\Gearstore.pdb
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\obj\Debug\Gearstore.csproj.GenerateResource.Cache
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\obj\Debug\gearproj.Migrations.one.resources
+c:\users\mwk\documents\visual studio 2017\Projects\Gearstore\Gearstore\obj\Debug\gearproj.Migrations.second.resources
+D:\gearapiv2\gs\Gearstore\obj\Debug\Gearstore.csprojResolveAssemblyReference.cache
+D:\gearapiv2\gs\Gearstore\obj\Debug\gearproj.Migrations.one.resources
+D:\gearapiv2\gs\Gearstore\obj\Debug\gearproj.Migrations.second.resources
+D:\gearapiv2\gs\Gearstore\obj\Debug\Gearstore.csproj.GenerateResource.Cache
+D:\gearapiv2\gs\Gearstore\obj\Debug\Gearstore.dll
+D:\gearapiv2\gs\Gearstore\obj\Debug\Gearstore.pdb
+D:\gearapiv2\gs\Gearstore\bin\ApplicationInsights.config
+D:\gearapiv2\gs\Gearstore\bin\roslyn\csc.exe
+D:\gearapiv2\gs\Gearstore\bin\roslyn\csc.exe.config
+D:\gearapiv2\gs\Gearstore\bin\roslyn\csc.rsp
+D:\gearapiv2\gs\Gearstore\bin\roslyn\csi.exe
+D:\gearapiv2\gs\Gearstore\bin\roslyn\csi.rsp
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\gearapiv2\gs\Gearstore\bin\roslyn\System.AppContext.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\System.Collections.Immutable.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\System.IO.FileSystem.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\System.Reflection.Metadata.dll
+D:\gearapiv2\gs\Gearstore\bin\roslyn\vbc.exe
+D:\gearapiv2\gs\Gearstore\bin\roslyn\vbc.exe.config
+D:\gearapiv2\gs\Gearstore\bin\roslyn\vbc.rsp
+D:\gearapiv2\gs\Gearstore\bin\roslyn\VBCSCompiler.exe
+D:\gearapiv2\gs\Gearstore\bin\roslyn\VBCSCompiler.exe.config
+D:\gearapiv2\gs\Gearstore\bin\Gearstore.dll.config
+D:\gearapiv2\gs\Gearstore\bin\Gearstore.dll
+D:\gearapiv2\gs\Gearstore\bin\Gearstore.pdb
+D:\gearapiv2\gs\Gearstore\bin\Antlr3.Runtime.dll
+D:\gearapiv2\gs\Gearstore\bin\EntityFramework.dll
+D:\gearapiv2\gs\Gearstore\bin\EntityFramework.SqlServer.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.Agent.Intercept.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.DependencyCollector.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.Web.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.WindowsServer.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.ApplicationInsights.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AspNet.Identity.Core.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Cors.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.Cookies.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.Facebook.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.Google.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.OAuth.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.Twitter.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Web.Infrastructure.dll
+D:\gearapiv2\gs\Gearstore\bin\Newtonsoft.Json.dll
+D:\gearapiv2\gs\Gearstore\bin\Owin.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Net.Http.Formatting.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Cors.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Helpers.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Http.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Http.Owin.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Http.WebHost.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Mvc.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Optimization.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Razor.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.WebPages.Deployment.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.WebPages.dll
+D:\gearapiv2\gs\Gearstore\bin\System.Web.WebPages.Razor.dll
+D:\gearapiv2\gs\Gearstore\bin\WebGrease.dll
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Cors.xml
+D:\gearapiv2\gs\Gearstore\bin\Newtonsoft.Json.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Net.Http.Formatting.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Helpers.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Http.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Http.WebHost.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Mvc.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Optimization.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Razor.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.WebPages.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.WebPages.Deployment.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.WebPages.Razor.xml
+D:\gearapiv2\gs\Gearstore\bin\Antlr3.Runtime.pdb
+D:\gearapiv2\gs\Gearstore\bin\EntityFramework.xml
+D:\gearapiv2\gs\Gearstore\bin\EntityFramework.SqlServer.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AspNet.Identity.Core.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.Facebook.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.Cookies.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.OAuth.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.Google.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.Twitter.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\gearapiv2\gs\Gearstore\bin\System.Web.Http.Owin.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.ApplicationInsights.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.DependencyCollector.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.WindowsServer.xml
+D:\gearapiv2\gs\Gearstore\bin\Microsoft.AI.Web.xml
+D:\gearapiv2\gs\Gearstore\obj\Debug\gearproj.Migrations.ssd.resources
+D:\gearapiv2\gs\Gearstore\obj\Debug\gearproj.Migrations.ssdd.resources
+D:\Gearstore\GS\Gearstore\bin\ApplicationInsights.config
+D:\Gearstore\GS\Gearstore\bin\roslyn\csc.exe
+D:\Gearstore\GS\Gearstore\bin\roslyn\csc.exe.config
+D:\Gearstore\GS\Gearstore\bin\roslyn\csc.rsp
+D:\Gearstore\GS\Gearstore\bin\roslyn\csi.exe
+D:\Gearstore\GS\Gearstore\bin\roslyn\csi.rsp
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Gearstore\GS\Gearstore\bin\roslyn\System.AppContext.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\System.Collections.Immutable.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\System.IO.FileSystem.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\System.Reflection.Metadata.dll
+D:\Gearstore\GS\Gearstore\bin\roslyn\vbc.exe
+D:\Gearstore\GS\Gearstore\bin\roslyn\vbc.exe.config
+D:\Gearstore\GS\Gearstore\bin\roslyn\vbc.rsp
+D:\Gearstore\GS\Gearstore\bin\roslyn\VBCSCompiler.exe
+D:\Gearstore\GS\Gearstore\bin\roslyn\VBCSCompiler.exe.config
+D:\Gearstore\GS\Gearstore\bin\Gearstore.dll.config
+D:\Gearstore\GS\Gearstore\bin\Gearstore.dll
+D:\Gearstore\GS\Gearstore\bin\Gearstore.pdb
+D:\Gearstore\GS\Gearstore\bin\Antlr3.Runtime.dll
+D:\Gearstore\GS\Gearstore\bin\EntityFramework.dll
+D:\Gearstore\GS\Gearstore\bin\EntityFramework.SqlServer.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.DependencyCollector.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.Web.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.WindowsServer.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.ApplicationInsights.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Cors.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.Google.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Web.Infrastructure.dll
+D:\Gearstore\GS\Gearstore\bin\Newtonsoft.Json.dll
+D:\Gearstore\GS\Gearstore\bin\Owin.dll
+D:\Gearstore\GS\Gearstore\bin\System.Net.Http.Formatting.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.Cors.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.Helpers.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.Http.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.Http.Owin.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.Http.WebHost.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.Mvc.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.Optimization.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.Razor.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.WebPages.Deployment.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.WebPages.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.WebPages.Razor.dll
+D:\Gearstore\GS\Gearstore\bin\WebGrease.dll
+D:\Gearstore\GS\Gearstore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Cors.xml
+D:\Gearstore\GS\Gearstore\bin\Newtonsoft.Json.xml
+D:\Gearstore\GS\Gearstore\bin\System.Net.Http.Formatting.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.Helpers.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.Http.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.Http.WebHost.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.Mvc.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.Optimization.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.Razor.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.WebPages.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.WebPages.Deployment.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.WebPages.Razor.xml
+D:\Gearstore\GS\Gearstore\bin\Antlr3.Runtime.pdb
+D:\Gearstore\GS\Gearstore\bin\EntityFramework.xml
+D:\Gearstore\GS\Gearstore\bin\EntityFramework.SqlServer.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.Google.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.Http.Owin.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.ApplicationInsights.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.DependencyCollector.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.WindowsServer.xml
+D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.Web.xml
+D:\Gearstore\GS\Gearstore\obj\Debug\Gearstore.csprojResolveAssemblyReference.cache
+D:\Gearstore\GS\Gearstore\obj\Debug\gearproj.Migrations.one.resources
+D:\Gearstore\GS\Gearstore\obj\Debug\gearproj.Migrations.second.resources
+D:\Gearstore\GS\Gearstore\obj\Debug\gearproj.Migrations.ssd.resources
+D:\Gearstore\GS\Gearstore\obj\Debug\gearproj.Migrations.ssdd.resources
+D:\Gearstore\GS\Gearstore\obj\Debug\Gearstore.csproj.GenerateResource.Cache
+D:\Gearstore\GS\Gearstore\obj\Debug\Gearstore.dll
+D:\Gearstore\GS\Gearstore\obj\Debug\Gearstore.pdb
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\ApplicationInsights.config
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\csc.exe
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\csc.exe.config
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\csc.rsp
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\csi.exe
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\csi.rsp
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\System.AppContext.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\System.Collections.Immutable.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\System.IO.FileSystem.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\System.Reflection.Metadata.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\vbc.exe
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\vbc.exe.config
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\vbc.rsp
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\VBCSCompiler.exe
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\roslyn\VBCSCompiler.exe.config
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Gearstore.dll.config
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Gearstore.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Gearstore.pdb
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Antlr3.Runtime.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\EntityFramework.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\EntityFramework.SqlServer.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.Agent.Intercept.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.DependencyCollector.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.Web.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.WindowsServer.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.ApplicationInsights.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.Core.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Cors.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Cookies.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Facebook.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Google.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.OAuth.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Twitter.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Web.Infrastructure.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Newtonsoft.Json.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Owin.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Net.Http.Formatting.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Cors.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Helpers.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Http.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Http.Owin.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Http.WebHost.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Mvc.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Optimization.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Razor.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.WebPages.Deployment.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.WebPages.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.WebPages.Razor.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\WebGrease.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Cors.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Newtonsoft.Json.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Net.Http.Formatting.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Helpers.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Http.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Http.WebHost.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Mvc.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Optimization.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Razor.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.WebPages.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.WebPages.Deployment.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.WebPages.Razor.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Antlr3.Runtime.pdb
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\EntityFramework.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\EntityFramework.SqlServer.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.Core.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Facebook.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Cookies.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.OAuth.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Google.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.Twitter.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\System.Web.Http.Owin.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.ApplicationInsights.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.DependencyCollector.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.WindowsServer.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\bin\Microsoft.AI.Web.xml
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\obj\Debug\Gearstore.csprojResolveAssemblyReference.cache
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\obj\Debug\gearproj.Migrations.one.resources
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\obj\Debug\gearproj.Migrations.second.resources
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\obj\Debug\gearproj.Migrations.ssd.resources
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\obj\Debug\gearproj.Migrations.ssdd.resources
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\obj\Debug\Gearstore.csproj.GenerateResource.Cache
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\obj\Debug\Gearstore.dll
+E:\ITI\graduation project\Code\03-06-2018\mvcapi\Gearstore\Gearstore\obj\Debug\Gearstore.pdb
