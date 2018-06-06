@@ -15,7 +15,7 @@ namespace gearproj.Controllers
 
 
         // GET: api/Feedbacks/5
-   
+   [HttpGet,Route("api/singleproduct/{id:int}")]
         public IHttpActionResult Get(int id)
         {
             var product = db.products.FirstOrDefault(a => a.productId == id);
@@ -30,13 +30,14 @@ namespace gearproj.Controllers
             }
 
                 ).Where(a => a.Productid == id);  // your starting point - table in the "from" statement
+            string companyname = db.Companies.FirstOrDefault(a => a.CompanyId == product.CompanyId).CompanyName;
 
-            if (product == null||otherproducts==null ||comments==null )
+            if (product == null||otherproducts==null ||comments==null||companyname==null )
             {
                 return BadRequest();
             }
             else
-                return Ok(new { product, otherproducts, comments });
+                return Ok(new { product, otherproducts, comments,companyname });
         }
         
     }
