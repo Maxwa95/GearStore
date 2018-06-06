@@ -190,20 +190,16 @@ namespace gearproj.Controllers
                     foreach (var img in images)
                     {
                         extension = img.FileName.Substring(img.FileName.LastIndexOf("."));
-                        productimage=db.
-                        productimage.ImgUrl = product.productId + imagenumber + extension;
-                        myimage = productimage.ImgUrl;
-                        productimage.ProductId = product.productId;
-                        db.
-                        Result = db.SaveChanges();
-                        if (Result == 1)
-                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/") + myimage);
-                        else break;
+                        myimage = product.productId + imagenumber + extension;
+                    
+   
+                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/")+myimage);
+                    
                         imagenumber++;
                     }
                     imagenumber = 1;
                 }
-                return Ok(db.products.ToList());
+                return Ok();
 
 
             }
