@@ -13,7 +13,7 @@ namespace gearproj.Controllers
     public class ClientProductsController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
-        [HttpGet, Route("api/ClientProducts")]
+        [HttpGet, Route("api/ClientProducts/byname")]
         public IHttpActionResult Get(int pagenum ,string name=null)
         {
             if (name == "*") { name = null; }
