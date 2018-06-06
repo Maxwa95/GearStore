@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace gearproj.Models
 {
- public   class Description
+ public class Description
     {
         public int DescriptionId { get; set; }
         [ForeignKey("Prod")]

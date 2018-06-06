@@ -47,7 +47,7 @@ namespace gearproj.Models
         [ForeignKey("bra")]
         public int BrandId { get; set; }
        
-        [JsonIgnore]
+         
 
         public Brand bra { get; set; }
         
@@ -58,7 +58,8 @@ namespace gearproj.Models
 
         [JsonIgnore]
         public virtual List<modelsproducts> modelproducts { get; set; }
-
+        
+        public Description Description { get; set; }
 
     }
 }
