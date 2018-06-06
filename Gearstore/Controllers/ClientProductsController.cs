@@ -106,15 +106,15 @@ namespace gearproj.Controllers
         public IHttpActionResult Getprod(int id)
         {
             var res = db.products.FirstOrDefault(a => a.productId == id);
+            var compname = db.Companies.FirstOrDefault(a => a.CompanyId == res.CompanyId);
             var others = db.products.Where(a => a.CategoryId == res.CategoryId && a.productId != res.productId).Take(3).ToList();
-           
             if (res == null)
             {
                 return BadRequest();
             }
             //hi
             else
-            return Ok(new {res,others});
+            return Ok(new {res,compname,others});
         }
 
 
