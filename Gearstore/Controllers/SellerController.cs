@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
+using System.Web.Hosting;
 using System.Web.Http;
 
 namespace gearproj.Controllers
@@ -49,14 +50,42 @@ namespace gearproj.Controllers
         //// POST: api/Seller
         [Authorize(Roles = "Seller")]
         [HttpPost, Route("api/seller/product")]
-        public IHttpActionResult Post([FromBody]Product product)
+        public IHttpActionResult Post([FromBody]Product product, HttpPostedFileBase[] images)
         {
+            int Result;
+            string extension,myimage;
+            int imagenumber=1;
+            Image productimage = new Image();
 
             if (ModelState.IsValid)
             {
                 db.products.Add(product);
-                db.SaveChanges();
-                return Ok(db.products.ToList());
+                Result = db.SaveChanges();
+                    if (Result == 1)
+                {
+                    foreach(var img in images)
+                    {
+                     extension = img.FileName.Substring(img.FileName.LastIndexOf("."));
+                      productimage.ImgUrl = product.productId + imagenumber + extension;
+                        myimage = productimage.ImgUrl;
+                        productimage.ProductId = product.productId;
+                        db.images.Add(productimage);
+                        Result=db.SaveChanges();
+                        if (Result == 1)
+                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/") + myimage);
+                        else break;
+                        imagenumber++;
+                    }
+                    imagenumber=1;
+                }
+                    if(Result!=1)
+                    return BadRequest("not valid image");
+
+
+                return Ok();
+
+
+
             }
             else
                 return BadRequest();
@@ -145,14 +174,38 @@ namespace gearproj.Controllers
         // PUT: api/Seller/5
         [Authorize(Roles = "Seller")]
         [HttpPut, Route("api/seller/product")]
-        public IHttpActionResult Put([FromBody]Product value)
+        public IHttpActionResult Put([FromBody]Product product , HttpPostedFileBase [] images)
         {
-            
+            int Result;
+            string extension, myimage;
+            int imagenumber = 1;
+            Image productimage = new Image();
+
             if (ModelState.IsValid)
             {
-                db.Entry(value).State = System.Data.Entity.EntityState.Modified;
-                db.SaveChanges();
+                db.Entry(product).State = System.Data.Entity.EntityState.Modified;
+                     Result=db.SaveChanges();
+                if (Result == 1)
+                {
+                    foreach (var img in images)
+                    {
+                        extension = img.FileName.Substring(img.FileName.LastIndexOf("."));
+                        productimage=db.
+                        productimage.ImgUrl = product.productId + imagenumber + extension;
+                        myimage = productimage.ImgUrl;
+                        productimage.ProductId = product.productId;
+                        db.
+                        Result = db.SaveChanges();
+                        if (Result == 1)
+                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/") + myimage);
+                        else break;
+                        imagenumber++;
+                    }
+                    imagenumber = 1;
+                }
                 return Ok(db.products.ToList());
+
+
             }
             else
                 return BadRequest();
