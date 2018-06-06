@@ -193,25 +193,14 @@ namespace gearproj.Controllers
                     foreach (var img in images)
                     {
                         extension = img.FileName.Substring(img.FileName.LastIndexOf("."));
-<<<<<<< HEAD
-                        myimage = product.productId + imagenumber + extension;
-                    
-   
-                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/")+myimage);
-                    
-=======
-
-                        myimage= product.productId + imagenumber + extension;
-                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/") + myimage);
-                     
->>>>>>> 6a3cc87d0c70674950edcf38e24f0c5f42fa7e68
+                myimage= product.productId + imagenumber + extension;
+                        img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/" + myimage));
                         imagenumber++;
                     }
                     imagenumber = 1;
                 }
                 return Ok();
-
-
+                
             }
             else
                 return BadRequest();

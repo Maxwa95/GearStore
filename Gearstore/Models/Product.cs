@@ -59,7 +59,7 @@ namespace gearproj.Models
         [JsonIgnore]
         public virtual List<modelsproducts> modelproducts { get; set; }
         
-        public Description Description { get; set; }
+      //  public Description Description { get; set; }
 
     }
 }

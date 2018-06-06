@@ -31,10 +31,10 @@ namespace gearproj.Controllers
         public IHttpActionResult Get(int pagenum,string catename="",string  brandsname="")
         {
 
-            if (catename == null)
-            {
-                catename = "*";
-            }
+            //if (catename == null)
+            //{
+            //    catename = "*";
+            //}
            
             string[] brands = brandsname.Split(',');
             string[] catnames = catename.Split(',');
@@ -42,7 +42,7 @@ namespace gearproj.Controllers
             var cats = db.Categories.Where(a => catnames.Contains(a.CategoriesName)).Select(a=>a.CategoriesId).ToList();
             int pgn = pagenum < 0 ? 1 : pagenum > Math.Ceiling(db.products.Count() / 8.0) ? (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum;
             int count = db.products.Count() < pgn * 8 ? ((pgn - 1) * 8) : (pgn - 1) * 8;
-            var prods = db.products.Where(a=>cats.Contains(a.CategoryId)|| brandsid.Contains(a.BrandId)||brandsid.Count==0|| cats.Count==0).OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
+            var prods = db.products.Where(a=>cats.Contains(a.CategoryId)|| brandsid.Contains(a.BrandId)||brandsid.Count==0&& cats.Count==0).OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
             if (prods == null)
             {
                 return BadRequest();
