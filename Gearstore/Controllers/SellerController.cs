@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Hosting;
 using System.Web.Http;
+using System.Data;
 
 namespace gearproj.Controllers
 {
@@ -179,22 +180,31 @@ namespace gearproj.Controllers
             int Result;
             string extension, myimage;
             int imagenumber = 1;
-            Image productimage = new Image();
+            List<Image> productimage = new List<Image>(); 
 
             if (ModelState.IsValid)
             {
+                
                 db.Entry(product).State = System.Data.Entity.EntityState.Modified;
                      Result=db.SaveChanges();
                 if (Result == 1)
                 {
+                    
                     foreach (var img in images)
                     {
                         extension = img.FileName.Substring(img.FileName.LastIndexOf("."));
+<<<<<<< HEAD
                         myimage = product.productId + imagenumber + extension;
                     
    
                             img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/")+myimage);
                     
+=======
+
+                        myimage= product.productId + imagenumber + extension;
+                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/") + myimage);
+                     
+>>>>>>> 6a3cc87d0c70674950edcf38e24f0c5f42fa7e68
                         imagenumber++;
                     }
                     imagenumber = 1;
@@ -221,6 +231,8 @@ namespace gearproj.Controllers
             else
             {
                 db.products.Remove(c);
+                db.images.RemoveRange(db.images.Where(a => a.ProductId == Productid));
+
                 db.SaveChanges();
                 return Ok(c);
             }
