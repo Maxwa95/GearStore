@@ -21,8 +21,8 @@ namespace gearproj.Models
         [Required]
         public string HomePhone { get; set; }
         public int? view { get; set; }
-        [Required]
-        [MaxLength(255)]
+        
+      
         public string Description { get; set; } 
         
         public float Rate { get; set; }

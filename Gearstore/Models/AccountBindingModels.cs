@@ -79,8 +79,7 @@ namespace gearproj.Models
         public string Address { get; set; }
         [Required]
         public string HomePhone { get; set; }
-        [Required]
-        [MaxLength(255)]
+       
         public string Description { get; set; }
     }
 

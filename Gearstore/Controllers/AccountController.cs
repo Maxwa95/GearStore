@@ -406,18 +406,18 @@ namespace gearproj.Controllers
                 PhoneNumber = model.PhoneNumber,
                 city = model.city,
                 usertype = "Seller",
-                profileImage = string.Empty
-               
+                profileImage = "N/A"
+
 
 
             };
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
-            db.Companies.Add(new Company { CompanyName = model.CompanyName, Address = model.Address, HomePhone = model.HomePhone, Description = model.Description });
+            db.Companies.Add(new Company { CompanyName = model.CompanyName, Address = model.Address, HomePhone = model.HomePhone, Description = model.Description , userid = user.Id});
             int f = db.SaveChanges();
             if (!result.Succeeded || f != 1)
             {
-                return GetErrorResult(result);
+                return BadRequest(result.Errors.ToString());
             }
             UserManager.AddToRole(UserManager.Find(user.UserName, model.Password).Id, "Seller");
 
