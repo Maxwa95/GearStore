@@ -13,8 +13,7 @@ namespace gearproj.Models
     public class NeededProducts
     {
         public int NeededProductsId { get; set; }
-        [Required] 
-        public int ImagePath { get; set; }
+        public string ImagePath { get; set; }
         [Required]
         public string FullName { get; set; }
         [Required]
