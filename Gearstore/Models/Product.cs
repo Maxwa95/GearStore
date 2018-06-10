@@ -30,6 +30,8 @@ namespace Gearstore.Models
         [Required]
         public float Price { get; set; }
         public float Discount { get; set; }
+
+        public string xo { get; set; }
         public int Quantity { get; set; }
         [ForeignKey("cpy")]
         public int CompanyId { get; set; }
@@ -55,11 +57,12 @@ namespace Gearstore.Models
         public virtual List<OrderDetails> Orders { get; set; }
         [JsonIgnore]
         public virtual List<SimilaritiesProducts> needs { get; set; }
+        [ForeignKey("model")]
+        public int Modelid { get; set; }
 
-        [JsonIgnore]
-        public virtual List<modelsproducts> modelproducts { get; set; }
-        
-      //  public Description Description { get; set; }
+
+        public Model model { get; set; }
+ 
 
     }
 }

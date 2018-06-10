@@ -19,8 +19,8 @@ namespace Gearstore.Controllers
         ApplicationDbContext db = new ApplicationDbContext();
 
 
-        // GET: api/Seller/5
         
+
         public IHttpActionResult Get(int id)
         {
             var c = db.Companies.FirstOrDefault(a => a.CompanyId == id);
@@ -187,7 +187,6 @@ namespace Gearstore.Controllers
 
             if (ModelState.IsValid)
             {
-                
                 db.Entry(product).State = System.Data.Entity.EntityState.Modified;
                      Result=db.SaveChanges();
                 if (Result == 1)

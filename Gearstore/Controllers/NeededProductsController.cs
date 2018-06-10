@@ -8,7 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using gearproj.Models;
+using Gearstore.Models;
 
 namespace Gearstore.Controllers
 {
@@ -35,7 +35,7 @@ namespace Gearstore.Controllers
             return Ok(neededProducts);
         }
         // GET: api/NeededProducts/5
-        [Route("/NeededProducts/{productname:alpha}")]
+        [Route("api/NeededProducts/{productname:alpha}")]
         public IHttpActionResult GetNeededProducts(int pagenum,string productname )
         {
             

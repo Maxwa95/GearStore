@@ -6,14 +6,14 @@ namespace Gearstore.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class ssd : IMigrationMetadata
+    [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
+    public sealed partial class removetwoii : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ssd));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(removetwoii));
         
         string IMigrationMetadata.Id
         {
-            get { return "201806031547247_ssd"; }
+            get { return "201806101412524_removetwoii"; }
         }
         
         string IMigrationMetadata.Source

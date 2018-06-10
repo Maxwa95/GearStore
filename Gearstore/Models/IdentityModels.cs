@@ -41,9 +41,7 @@ namespace Gearstore.Models
     {
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Categories> Categories { get; set; }
-
-        public DbSet<modelsproducts> modelsproducts { get; set; }
-      
+        
 
         public DbSet<Company> Companies { get; set; }
 

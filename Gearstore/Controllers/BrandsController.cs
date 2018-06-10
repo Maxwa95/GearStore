@@ -17,9 +17,38 @@ namespace Gearstore.Controllers
         // get brands infos
         public HttpResponseMessage Get()
         {
-            return Request.CreateResponse(HttpStatusCode.OK,db.Brands.Select(i => new { i.BrandName,i.ImagePath }).ToList());
+            return Request.CreateResponse(HttpStatusCode.OK,db.Brands.ToList());
         }
-       [Route("api/getfilterdata")]
+        [Route("api/categories")]
+        public IHttpActionResult Getcats()
+        {
+            var c = db.Categories.ToList();
+            if (c == null)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                return Ok(c);
+            }
+
+        }
+        [Route("api/models")]
+        public IHttpActionResult Getmods()
+        {
+            var c = db.Models.ToList();
+            if (c == null)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                return Ok(c);
+            }
+        }
+
+
+        [Route("api/getfilterdata")]
         public IHttpActionResult Getfilterdata()
         {
             //  return Request.CreateResponse(HttpStatusCode.OK, db.Brands.Select(i => new { i.BrandName, i.BrandId }).ToList());
