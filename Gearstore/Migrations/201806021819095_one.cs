@@ -1,4 +1,4 @@
-namespace gearproj.Migrations
+namespace Gearstore.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

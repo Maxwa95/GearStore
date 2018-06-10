@@ -12,13 +12,13 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using gearproj.Models;
+using Gearstore.Models;
 using System.Net;
 using Gearstore;
 using Gearstore.Results;
 using Gearstore.Providers;
 
-namespace gearproj.Controllers
+namespace Gearstore.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]

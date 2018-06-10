@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace gearproj.Models
+namespace Gearstore.Models
 {
     
     public class Brand

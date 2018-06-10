@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gearproj.Models
+namespace Gearstore.Models
 {
  public class Description
     {

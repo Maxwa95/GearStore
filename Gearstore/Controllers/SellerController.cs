@@ -1,4 +1,4 @@
-﻿using gearproj.Models;
+﻿using Gearstore.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Web.Hosting;
 using System.Web.Http;
 using System.Data;
 
-namespace gearproj.Controllers
+namespace Gearstore.Controllers
 {
     
     public class SellerController : ApiController
@@ -51,7 +51,7 @@ namespace gearproj.Controllers
         //// POST: api/Seller
         [Authorize(Roles = "Seller")]
         [HttpPost, Route("api/seller/product")]
-        public IHttpActionResult Post([FromBody]Product product, HttpPostedFileBase[] images)
+        public IHttpActionResult Post([FromBody]Productdesc productdesc, HttpPostedFileBase[] images)
         {
             int Result;
             string extension,myimage;
@@ -60,30 +60,33 @@ namespace gearproj.Controllers
 
             if (ModelState.IsValid)
             {
-                db.products.Add(product);
+                db.products.Add(productdesc.product);
+                productdesc.description.ProdId = productdesc.product.productId;
+                db.Descriptions.Add(productdesc.description);
                 Result = db.SaveChanges();
                     if (Result == 1)
                 {
-                    foreach(var img in images)
+                    /*
+                    foreach (var img in images)
                     {
                      extension = img.FileName.Substring(img.FileName.LastIndexOf("."));
-                      productimage.ImgUrl = product.productId + imagenumber + extension;
+                      productimage.ImgUrl = productdesc.product.productId + imagenumber + extension;
                         myimage = productimage.ImgUrl;
-                        productimage.ProductId = product.productId;
+                        productimage.ProductId = productdesc.product.productId;
                         db.images.Add(productimage);
                         Result=db.SaveChanges();
                         if (Result == 1)
-                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProductImages/") + myimage);
+                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProdImages/") + myimage);
                         else break;
                         imagenumber++;
-                    }
+                    }*/
                     imagenumber=1;
                 }
                     if(Result!=1)
                     return BadRequest("not valid image");
 
 
-                return Ok();
+                return Ok(productdesc);
 
 
 

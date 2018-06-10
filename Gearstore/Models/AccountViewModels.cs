@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace gearproj.Models
+namespace Gearstore.Models
 {
     // Models returned by AccountController actions.
 

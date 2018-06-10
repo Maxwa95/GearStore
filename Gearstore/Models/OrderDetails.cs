@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace gearproj.Models
+namespace Gearstore.Models
  { 
     public class OrderDetails
     {

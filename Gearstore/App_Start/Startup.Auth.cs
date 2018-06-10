@@ -10,7 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using Gearstore.Providers;
 
-using gearproj.Models;
+using Gearstore.Models;
 
 namespace Gearstore
 {

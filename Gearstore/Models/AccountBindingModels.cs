@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace gearproj.Models
+namespace Gearstore.Models
 {
     // Models used as parameters to AccountController actions.
 

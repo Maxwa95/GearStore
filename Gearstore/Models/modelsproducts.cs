@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace gearproj.Models
+namespace Gearstore.Models
 {
     public class modelsproducts
     {

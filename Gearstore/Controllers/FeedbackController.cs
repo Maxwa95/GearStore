@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using gearproj.Models;
+using Gearstore.Models;
 
-namespace gearproj.Controllers
+namespace Gearstore.Controllers
 {
   
     public class FeedbackController : ApiController
