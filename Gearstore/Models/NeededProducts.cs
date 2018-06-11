@@ -25,6 +25,13 @@ namespace Gearstore.Models
         public string TextResponce {get;set;}
         [JsonIgnore]
         public virtual List<SimilaritiesProducts> Products { get; set; }
+        [ForeignKey("model")]
+        public int modelid { get; set; }
+        [ForeignKey("brand")]
+        public int brandid { get; set; }
+        public Brand brand { get; set; }
+        public Model model { get; set; }
+
     } 
             
 }
