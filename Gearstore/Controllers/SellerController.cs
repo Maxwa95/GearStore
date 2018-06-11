@@ -18,8 +18,20 @@ namespace Gearstore.Controllers
 
         ApplicationDbContext db = new ApplicationDbContext();
 
+        [HttpGet, Route("api/seller/GetoneProduct/{p_id:int}")]
+        public IHttpActionResult Getproduct(int p_id)
+        {
+            var c = db.products.FirstOrDefault(a => a.productId == p_id);
+            if (c == null)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                return Ok(c);
+            }
 
-        
+        }
 
         public IHttpActionResult Get(int id)
         {

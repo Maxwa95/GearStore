@@ -59,6 +59,7 @@ namespace Gearstore.Models
         public virtual List<SimilaritiesProducts> needs { get; set; }
         [ForeignKey("model")]
         public int Modelid { get; set; }
+        public Description Description { get; set; }
 
 
         public Model model { get; set; }

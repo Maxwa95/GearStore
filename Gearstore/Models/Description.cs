@@ -25,7 +25,7 @@ namespace Gearstore.Models
         public string MoreDetails { get; set; }
 
         public int YearOfProduct { get; set; }
-        [JsonIgnore]
+      [JsonIgnore]
         public Product Prod { get; set; }
 
 
