@@ -53,6 +53,7 @@ namespace Gearstore.Models
         
         [JsonIgnore]
         public virtual List<OrderDetails> Orders { get; set; }
+<<<<<<< HEAD
        
 
         public List<Description> getdesc()
@@ -92,6 +93,13 @@ namespace Gearstore.Models
             Result.AddRange(ALL);
             return Result;
         }
+=======
+        [JsonIgnore]
+        public virtual List<SimilaritiesProducts> needs { get; set; }
+        [ForeignKey("model")]
+        public int Modelid { get; set; }
+        public Description Description { get; set; }
+>>>>>>> 9578db3e4bfa067133b7779da05a4f26a55f025d
 
         public List<Company> getcomp()
         {

@@ -18,7 +18,7 @@ namespace Gearstore.Models
         public DateTime OrderDate { get; set; }
         [Required]
         public string TotalCost { get; set; }
-        [Required]
+        
         public string SelectedAdd { get; set; }
         [Required]
         public string OrderStatus { get; set; }
@@ -32,7 +32,7 @@ namespace Gearstore.Models
         public ApplicationUser user { get; set; }
 
         [ForeignKey("ShippingCompany")]
-        public int ShippingCompanyid { get; set; }
+        public int? ShippingCompanyid { get; set; }
         [JsonIgnore]
         public ShippingCompany ShippingCompany { get; set; }
            

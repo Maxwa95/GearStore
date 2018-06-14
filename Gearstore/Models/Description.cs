@@ -24,8 +24,13 @@ namespace Gearstore.Models
         [Required]
         public string MoreDetails { get; set; }
 
+<<<<<<< HEAD
         public DateTime YearOfProduct { get; set; }
         [JsonIgnore]
+=======
+        public int YearOfProduct { get; set; }
+      [JsonIgnore]
+>>>>>>> 9578db3e4bfa067133b7779da05a4f26a55f025d
         public Product Prod { get; set; }
 
 
