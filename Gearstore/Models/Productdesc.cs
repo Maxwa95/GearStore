@@ -7,8 +7,8 @@ namespace Gearstore.Models
 {
     public class Productdesc
     {
+        public Description Description { get; set; }
         public Product product { get; set; }
 
-        public Description description { get; set; }
     }
 }

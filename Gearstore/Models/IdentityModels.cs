@@ -26,7 +26,13 @@ namespace Gearstore.Models
         public string profileImage { get; set; }
 
         public virtual List<FeedBack> feedbacks { get; set; }
-        
+
+        public virtual List<NeededProducts> needproducts { get; set; }
+
+        public virtual List<Userconnections> userconnections { get; set; }
+
+
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, string authenticationType)
         {
             
@@ -55,8 +61,12 @@ namespace Gearstore.Models
         public DbSet<Product> products { get; set; }
         public DbSet<ShippingCompany> ShippingCompanies { get; set; }
 
+
         public DbSet<FeedBack> Feedbacks { get; set; }
-        public DbSet<SimilaritiesProducts>  SimilaritiesProducts { get; set; }
+
+        public DbSet<Userconnections> Userconnections { get; set; }
+
+        public DbSet<Requests> Requests { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

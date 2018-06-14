@@ -20,7 +20,12 @@ namespace Gearstore.Models
         [JsonIgnore]
         public virtual List<Categories_Model> categories { get; set; }
 
+/*
+        public virtual NeededProducts needproduct { get; set; }
+
         [JsonIgnore]
-        public virtual List<Product> products { get; set; }
+        //*/
+        //[JsonIgnore]
+        //public virtual List<Product> products { get; set; }
     }
 }

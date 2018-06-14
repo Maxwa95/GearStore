@@ -32,12 +32,15 @@ namespace Gearstore.Controllers
                 ).Where(a => a.Productid == id);  // your starting point - table in the "from" statement
             string companyname = db.Companies.FirstOrDefault(a => a.CompanyId == product.CompanyId).CompanyName;
 
-            if (product == null||otherproducts==null ||comments==null||companyname==null )
+            if (product == null)
             {
                 return BadRequest();
             }
             else
-                return Ok(new { product, otherproducts, comments,companyname });
+                return Ok(new { product,brands = product.getbrand(),Categories = product.getcat(),
+                    Company = product.getcomp(),Description = product.getdesc(),
+
+                    otherproducts, comments});
         }
         
     }

@@ -9,6 +9,9 @@ using System.Web;
 using System.Web.Hosting;
 using System.Web.Http;
 using System.Data;
+using System.Web.Security;
+using System.Security.Principal;
+using Microsoft.AspNet.Identity;
 
 namespace Gearstore.Controllers
 {
@@ -17,9 +20,13 @@ namespace Gearstore.Controllers
     {
 
         ApplicationDbContext db = new ApplicationDbContext();
-
-
-        
+        [HttpGet]
+        [Authorize(Roles = "Seller")]
+        [Route("api/whoami")]
+        public IHttpActionResult whoami()
+        {
+            return Ok(new { Type = "Seller" });
+        }
 
         public IHttpActionResult Get(int id)
         {
@@ -34,35 +41,52 @@ namespace Gearstore.Controllers
             }
 
         }
-      
-        [HttpGet, Route("api/seller/GetProducts/{companyid:int}")]
-        public IHttpActionResult GetProducts(int companyid)
+        [Authorize(Roles = "Seller")]
+        [HttpGet, Route("api/seller/GetProducts")]
+        public IHttpActionResult GetProducts()
         {
-            var _var = db.products.Where(a => a.CompanyId == companyid).ToList();
 
+            string userid = User.Identity.GetUserId();
+            var _var = db.products.Where(a => a.CompanyId == db.Companies.FirstOrDefault(x => x.userid == userid).CompanyId).ToList();
+            
+            var result = _var.Select(a => new
+            {
+                Product = a,
+                Brands = a.getbrand().FirstOrDefault(),
+                Models = a.getdesc().FirstOrDefault()
+
+            }).ToList();
+                
+            
             if (_var != null)
             {
-                return Ok(_var);
+                return Ok(
+                result
+                    );
             }
             else
                 return BadRequest();
         }
 
         //// POST: api/Seller
-        [Authorize(Roles = "Seller")]
+       [Authorize(Roles ="Seller")]
         [HttpPost, Route("api/seller/product")]
-        public IHttpActionResult Post([FromBody]Productdesc productdesc, HttpPostedFileBase[] images)
+        public IHttpActionResult Post([FromBody]Productdesc productdesc)
         {
             int Result;
             string extension,myimage;
             int imagenumber=1;
             Image productimage = new Image();
+            var userid = User.Identity.GetUserId();
+            var c = db.Companies.FirstOrDefault(a => a.userid == userid);
 
             if (ModelState.IsValid)
             {
+                productdesc.product.CompanyId = c.CompanyId;
                 db.products.Add(productdesc.product);
-                productdesc.description.ProdId = productdesc.product.productId;
-                db.Descriptions.Add(productdesc.description);
+                db.SaveChanges();
+                productdesc.Description.ProdId = productdesc.product.productId;
+                db.Descriptions.Add(productdesc.Description);
                 Result = db.SaveChanges();
                     if (Result == 1)
                 {
@@ -224,7 +248,7 @@ namespace Gearstore.Controllers
                 db.products.Remove(c);
                 db.images.RemoveRange(db.images.Where(a => a.ProductId == Productid));
 
-                db.SaveChanges();
+               // db.SaveChanges();
                 return Ok(c);
             }
 
