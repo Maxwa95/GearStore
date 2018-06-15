@@ -9,7 +9,6 @@ namespace Gearstore.Models
     {
         public Product product { get; set;  }
         public int quantity { get; set; }
-        public string totalcost { get; set; }
     }
 
 }

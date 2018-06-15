@@ -9,7 +9,7 @@ namespace Gearstore.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Gearstore.Models.ApplicationDbContext context)

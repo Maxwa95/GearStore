@@ -29,7 +29,6 @@ namespace Gearstore.Models
 
         public virtual List<NeededProducts> needproducts { get; set; }
 
-        public virtual List<Userconnections> userconnections { get; set; }
 
 
 
@@ -64,9 +63,6 @@ namespace Gearstore.Models
 
         public DbSet<FeedBack> Feedbacks { get; set; }
 
-        public DbSet<Userconnections> Userconnections { get; set; }
-
-        public DbSet<Requests> Requests { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

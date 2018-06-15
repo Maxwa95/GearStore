@@ -144,6 +144,9 @@
     <Reference Include="System.Web.Http, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.6\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Cors.5.2.6\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Http.Owin, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.6\lib\net45\System.Web.Http.Owin.dll</HintPath>
     </Reference>
@@ -245,9 +248,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\ClientProductsController.cs" />
+    <Compile Include="Controllers\ConfirmOrderController.cs" />
     <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ModelsController.cs" />
+    <Compile Include="Controllers\NeededProductsController.cs" />
     <Compile Include="Controllers\ProdInfoController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\SellerController.cs" />
@@ -255,26 +260,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201806021819095_one.cs" />
-    <Compile Include="Migrations\201806021819095_one.Designer.cs">
-      <DependentUpon>201806021819095_one.cs</DependentUpon>
+    <Compile Include="Migrations\201806142026429_InitialCreate.cs" />
+    <Compile Include="Migrations\201806142026429_InitialCreate.Designer.cs">
+      <DependentUpon>201806142026429_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201806031241235_second.cs" />
-    <Compile Include="Migrations\201806031241235_second.Designer.cs">
-      <DependentUpon>201806031241235_second.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806031547247_ssd.cs" />
-    <Compile Include="Migrations\201806031547247_ssd.Designer.cs">
-      <DependentUpon>201806031547247_ssd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806031549572_ssdd.cs" />
-    <Compile Include="Migrations\201806031549572_ssdd.Designer.cs">
-      <DependentUpon>201806031549572_ssdd.cs</DependentUpon>
+    <Compile Include="Migrations\201806142034103_one.cs" />
+    <Compile Include="Migrations\201806142034103_one.Designer.cs">
+      <DependentUpon>201806142034103_one.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
+    <Compile Include="Models\cart.cs" />
     <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\company.cs" />
     <Compile Include="Models\Description.cs" />
@@ -282,14 +280,13 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Model.cs" />
-    <Compile Include="Models\modelsproducts.cs" />
     <Compile Include="Models\NeededProducts.cs" />
     <Compile Include="Models\OrderDetails.cs" />
     <Compile Include="Models\OrderInfo.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Productdesc.cs" />
     <Compile Include="Models\productsearch.cs" />
     <Compile Include="Models\ShippingCompany.cs" />
-    <Compile Include="Models\SimilaritiesProducts.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -312,18 +309,19 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\ProdImages\11.jpg" />
+    <Content Include="Content\ProdImages\111.jpg" />
     <Content Include="Content\ProdImages\12.jpg" />
     <Content Include="Content\ProdImages\13.jpg" />
+    <Content Include="Content\ProdImages\131.jpg" />
     <Content Include="Content\ProdImages\14.jpg" />
-    <Content Include="Content\ProdImages\15.jpg" />
+    <Content Include="Content\ProdImages\151.jpg" />
     <Content Include="Content\ProdImages\16.jpg" />
     <Content Include="Content\ProdImages\17.jpg" />
     <Content Include="Content\ProdImages\18.jpg" />
-    <Content Include="Content\ProdImages\2.jpg" />
-    <Content Include="Content\ProdImages\4.jpg" />
-    <Content Include="Content\ProdImages\5.jpg" />
-    <Content Include="Content\ProdImages\8.jpg" />
-    <Content Include="Content\ProdImages\9.jpg" />
+    <Content Include="Content\ProdImages\21.jpg" />
+    <Content Include="Content\ProdImages\31.jpg" />
+    <Content Include="Content\ProdImages\51.jpg" />
+    <Content Include="Content\ProdImages\91.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
@@ -424,29 +422,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\NeedImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201806021819095_one.resx">
-      <DependentUpon>201806021819095_one.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806031241235_second.resx">
-      <DependentUpon>201806031241235_second.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806031547247_ssd.resx">
-      <DependentUpon>201806031547247_ssd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806031549572_ssdd.resx">
-      <DependentUpon>201806031549572_ssdd.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806142026429_InitialCreate.resx">
+      <DependentUpon>201806142026429_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806142034103_one.resx">
+      <DependentUpon>201806142034103_one.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

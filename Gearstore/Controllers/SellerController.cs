@@ -20,7 +20,6 @@ namespace Gearstore.Controllers
     {
 
         ApplicationDbContext db = new ApplicationDbContext();
-<<<<<<< HEAD
         [HttpGet]
         [Authorize(Roles = "Seller")]
         [Route("api/whoami")]
@@ -29,10 +28,16 @@ namespace Gearstore.Controllers
             return Ok(new { Type = "Seller" });
         }
 
+        [HttpGet]
+        [Authorize(Roles = "Client")]
+        [Route("api/whoami/client")]
+        public IHttpActionResult whoamiuser()
+        {
+            return Ok(new { Type = "Client" });
+        }
+
+
         public IHttpActionResult Get(int id)
-=======
-       public IHttpActionResult Get(int id)
->>>>>>> 9578db3e4bfa067133b7779da05a4f26a55f025d
         {
             var c = db.Companies.FirstOrDefault(a => a.CompanyId == id);
             if (c == null)

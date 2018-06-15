@@ -16,23 +16,15 @@ namespace Gearstore.Models
         public string ImagePath { get; set; }
         [Required]
         public string FullName { get; set; }
-        [Required]
+        
         public DateTime RequestDate{get;set;}
-
-        [Required]
+        
         public string StatuseResponce{get;set;} //pending //closed // invalid request
         
         public string TextResponce {get;set;}
-        
-        [ForeignKey("model")]
-        public int modelid { get; set; }
-        [ForeignKey("brand")]
-        public int brandid { get; set; }
         [ForeignKey("user")]
         public string userid { get; set; }
-        public virtual Brand brand { get; set; }
-        public virtual Model model { get; set; }
-
+       [JsonIgnore]
         public virtual ApplicationUser user { get; set; }
 
     } 

@@ -9,9 +9,15 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Gearstore.Models;
+using Microsoft.AspNet.Identity;
+using System.Web;
+using System.Web.Http.Cors;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace Gearstore.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class NeededProductsController : ApiController
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -100,19 +106,42 @@ namespace Gearstore.Controllers
         }
 
         // POST: api/NeededProducts
-        [ResponseType(typeof(NeededProducts))]
-        public IHttpActionResult PostNeededProducts(NeededProducts neededProducts)
+        [HttpPost,Authorize(Roles ="Client")]
+        [Route("api/need")]
+        public IHttpActionResult PostNeededProducts()
         {
-            if (!ModelState.IsValid)
+            NeededProducts np = new NeededProducts();
+            
+
+            var httpRequest = HttpContext.Current.Request;
+            np.FullName = httpRequest.Form["FullName"];
+            np.TextResponce = httpRequest.Form["TextResponce"];
+            np.userid =  User.Identity.GetUserId();
+            np.RequestDate = DateTime.Now;
+            np.StatuseResponce = "Pending";
+            if (httpRequest.Files.Count == 1 && np.FullName != null && np.TextResponce != null)
             {
-                return BadRequest(ModelState);
+                if (httpRequest.Files[0].ContentType == "image/jpeg" && httpRequest.Files[0].ContentLength < 2048000000)
+                {
+                    var name = Guid.NewGuid().ToString().Split('-')[0] + ".jpg";
+                    var postedFile = httpRequest.Files[0];
+                    var filePath = HttpContext.Current.Server.MapPath("~/Content/NeedImages/" + name );
+                    np.ImagePath = name;
+                    postedFile.SaveAs(filePath);
+                }
+                else
+                {
+                    return BadRequest();
+                }
             }
-
-            db.NeededProducts.Add(neededProducts);
+            else
+            {
+                return BadRequest();
+            }
+            db.NeededProducts.Add(np);
             db.SaveChanges();
-
-            return CreatedAtRoute("DefaultApi", new { id = neededProducts.NeededProductsId }, neededProducts);
-        }
+            return Ok();
+            }
 
         // DELETE: api/NeededProducts/5
         [ResponseType(typeof(NeededProducts))]
