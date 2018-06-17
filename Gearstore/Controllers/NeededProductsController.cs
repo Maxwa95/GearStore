@@ -111,8 +111,6 @@ namespace Gearstore.Controllers
         public IHttpActionResult PostNeededProducts()
         {
             NeededProducts np = new NeededProducts();
-            
-
             var httpRequest = HttpContext.Current.Request;
             np.FullName = httpRequest.Form["FullName"];
             np.TextResponce = httpRequest.Form["TextResponce"];

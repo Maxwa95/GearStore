@@ -94,32 +94,15 @@ namespace Gearstore.Controllers
                 productdesc.product.CompanyId = c.CompanyId;
                 db.products.Add(productdesc.product);
                 db.SaveChanges();
-                productdesc.Description.ProdId = productdesc.product.productId;
-                db.Descriptions.Add(productdesc.Description);
+                productdesc.Desc.ProdId = productdesc.product.productId;
+                db.Descriptions.Add(productdesc.Desc);
                 Result = db.SaveChanges();
-                    if (Result == 1)
-                {
-                    /*
-                    foreach (var img in images)
-                    {
-                     extension = img.FileName.Substring(img.FileName.LastIndexOf("."));
-                      productimage.ImgUrl = productdesc.product.productId + imagenumber + extension;
-                        myimage = productimage.ImgUrl;
-                        productimage.ProductId = productdesc.product.productId;
-                        db.images.Add(productimage);
-                        Result=db.SaveChanges();
-                        if (Result == 1)
-                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProdImages/") + myimage);
-                        else break;
-                        imagenumber++;
-                    }*/
-                    imagenumber=1;
-                }
+               
                     if(Result!=1)
                     return BadRequest("not valid image");
 
 
-                return Ok(productdesc);
+                return Ok(new { id = productdesc.product.productId });
 
 
 
@@ -128,80 +111,105 @@ namespace Gearstore.Controllers
                 return BadRequest();
 
         }
-
+        [Authorize(Roles ="Seller")]
         [HttpPost, Route("api/seller/productImages")]
-        public async Task<IHttpActionResult> PostImages(int prodId)
+        public  IHttpActionResult PostImages()
         {
-
-            if (ModelState.IsValid)
+            var httpRequest = HttpContext.Current.Request;
+           int productId = int.Parse(httpRequest.Form["prodid"]);
+          if (ModelState.IsValid)
             {
                 List<Image> productimages = new List<Image>();
                 try
                 {
-                    var httpRequest = HttpContext.Current.Request;
-                    foreach (string file in httpRequest.Files)
-                    {
-                        HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created);
 
-                        var postedFile = httpRequest.Files[file];
-                        if (postedFile != null && postedFile.ContentLength > 0)
-                        {
-
-                            int MaxContentLength = 1024 * 1024 * 1; //Size = 1 MB  
-
-                            IList<string> AllowedFileExtensions = new List<string> { ".jpg", ".gif", ".png" };
-                            var ext = postedFile.FileName.Substring(postedFile.FileName.LastIndexOf('.'));
-                            var FileName = postedFile.FileName.Replace(ext,"");
-                            var extension = ext.ToLower();
-                            if (!AllowedFileExtensions.Contains(extension))
-                            {
-
-                                var message = string.Format("Please Upload image of type .jpg,.gif,.png.");
-
-                                return BadRequest(message);
-                            }
-                            else if (postedFile.ContentLength > MaxContentLength)
-                            {
-
-                                var message = string.Format("Please Upload a file upto 1 mb.");
-
-                                return BadRequest(message);
-                            }
-                            else
-                            {
-
-                                var filePath = HttpContext.Current.Server.MapPath("~/Content/ProductImages/" + FileName + extension);
-                                postedFile.SaveAs(filePath);
-                                Image img = new Image();
-                                img.ImgUrl = FileName + extension;
-                                img.ProductId = prodId;
-                                productimages.Add(img);
-
-
-                            }
-                        }
-                    }
-                    if (productimages.Count > 0)
+                    int imagenumber = 1;
+                    foreach (string imgname in httpRequest.Files)
                     {
 
-                        var message1 = string.Format("Images Uploaded Successfully.");
+                        HttpPostedFile img = httpRequest.Files[imgname];
+                        Image image = new Image();
+                        string extension = img.FileName.Substring(img.FileName.LastIndexOf("."));
 
-                        db.images.AddRange(productimages);
-                        db.SaveChanges();
-                        return Ok(message1); ;
+                        image.ImgUrl = productId.ToString() + imagenumber.ToString() + extension;
+                        string myimage = image.ImgUrl;
+                        image.ProductId = productId;
+                        db.images.Add(image);
+                        int Result = db.SaveChanges();
+                        if (Result == 1)
+                            img.SaveAs(HostingEnvironment.MapPath("~/Content/ProdImages/") + myimage);
+                        else break;
+                        imagenumber++;
                     }
-                    else
-                    {
-                        var res = string.Format("Please Upload a image.");
-                        return BadRequest(res);
-                    }
+                    imagenumber = 1;
+                    return Ok();
+
+                    //    var httpRequest = HttpContext.Current.Request;
+                    //    foreach (string file in httpRequest.Files)
+                    //    {
+                    //        HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created);
+
+                    //        var postedFile = httpRequest.Files[file];
+                    //        if (postedFile != null && postedFile.ContentLength > 0)
+                    //        {
+
+                    //            int MaxContentLength = 1024 * 1024 * 1; //Size = 1 MB  
+
+                    //            IList<string> AllowedFileExtensions = new List<string> { ".jpg", ".gif", ".png" };
+                    //            var ext = postedFile.FileName.Substring(postedFile.FileName.LastIndexOf('.'));
+                    //            var FileName = postedFile.FileName.Replace(ext,"");
+                    //            var extension = ext.ToLower();
+                    //            if (!AllowedFileExtensions.Contains(extension))
+                    //            {
+
+                    //                var message = string.Format("Please Upload image of type .jpg,.gif,.png.");
+
+                    //                return BadRequest(message);
+                    //            }
+                    //            else if (postedFile.ContentLength > MaxContentLength)
+                    //            {
+
+                    //                var message = string.Format("Please Upload a file upto 1 mb.");
+
+                    //                return BadRequest(message);
+                    //            }
+                    //            else
+                    //            {
+
+                    //                var filePath = HttpContext.Current.Server.MapPath("~/Content/ProductImages/" + FileName + extension);
+                    //                postedFile.SaveAs(filePath);
+                    //                Image img = new Image();
+                    //                img.ImgUrl = FileName + extension;
+                    //                img.ProductId = prodId;
+                    //                productimages.Add(img);
+
+
+                    //            }
+                    //        }
+                    //    }
+                    //    if (productimages.Count > 0)
+                    //    {
+
+                    //        var message1 = string.Format("Images Uploaded Successfully.");
+
+                    //        db.images.AddRange(productimages);
+                    //        db.SaveChanges();
+                    //        return Ok(message1); ;
+                    //    }
+                    //    else
+                    //    {
+                    //        var res = string.Format("Please Upload a image.");
+                    //        return BadRequest(res);
+                    //    }
+                    //}
                 }
                 catch (Exception ex)
                 {
-                    var res = string.Format("some Message");
-                    return BadRequest(res);
+                   
+
+                    return BadRequest(ex.Message);
                 }
-            }
+                }
             else
                 return BadRequest();
 

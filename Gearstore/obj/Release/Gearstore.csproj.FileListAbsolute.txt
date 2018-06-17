@@ -354,3 +354,8 @@ D:\Gearstore\GS\Gearstore\bin\WebMatrix.Data.dll
 D:\Gearstore\GS\Gearstore\bin\WebMatrix.WebData.dll
 D:\Gearstore\GS\Gearstore\bin\WebMatrix.Data.xml
 D:\Gearstore\GS\Gearstore\bin\WebMatrix.WebData.xml
+D:\Gearstore\GS\Gearstore\bin\System.Web.Http.Cors.dll
+D:\Gearstore\GS\Gearstore\bin\System.Web.Http.Cors.xml
+D:\Gearstore\GS\Gearstore\obj\Release\Gearstore.Migrations.InitialCreate.resources
+D:\Gearstore\GS\Gearstore\obj\Release\Gearstore.Migrations.one.resources
+D:\Gearstore\GS\Gearstore\obj\Release\Gearstore.csproj.GenerateResource.Cache

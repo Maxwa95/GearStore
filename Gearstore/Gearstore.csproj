@@ -274,6 +274,7 @@
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\cart.cs" />
     <Compile Include="Models\Categories.cs" />
+    <Compile Include="Models\Checkout.cs" />
     <Compile Include="Models\company.cs" />
     <Compile Include="Models\Description.cs" />
     <Compile Include="Models\feedback.cs" />
@@ -308,6 +309,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\NeedImages\3a726350.jpg" />
     <Content Include="Content\ProdImages\11.jpg" />
     <Content Include="Content\ProdImages\111.jpg" />
     <Content Include="Content\ProdImages\12.jpg" />
@@ -319,7 +321,9 @@
     <Content Include="Content\ProdImages\17.jpg" />
     <Content Include="Content\ProdImages\18.jpg" />
     <Content Include="Content\ProdImages\21.jpg" />
-    <Content Include="Content\ProdImages\31.jpg" />
+    <Content Include="Content\ProdImages\301.jpg" />
+    <Content Include="Content\ProdImages\302.jpg" />
+    <Content Include="Content\ProdImages\41.jpg" />
     <Content Include="Content\ProdImages\51.jpg" />
     <Content Include="Content\ProdImages\91.jpg" />
     <Content Include="favicon.ico" />
@@ -422,7 +426,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\NeedImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
