@@ -17,6 +17,9 @@ using System.Net;
 using Gearstore;
 using Gearstore.Results;
 using Gearstore.Providers;
+using System.Web.Security;
+//using System.Web.Security;
+//using System.Web.Security;
 
 namespace Gearstore.Controllers
 {
@@ -74,6 +77,7 @@ namespace Gearstore.Controllers
             Authentication.SignOut(CookieAuthenticationDefaults.AuthenticationType);
             return Ok();
         }
+        
 
         // GET api/Account/ManageInfo?returnUrl=%2F&generateState=true
         [Route("ManageInfo")]

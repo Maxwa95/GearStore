@@ -323,11 +323,6 @@ D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.DependencyCollector.xml
 D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.WindowsServer.xml
 D:\Gearstore\GS\Gearstore\bin\Microsoft.AI.Web.xml
 D:\Gearstore\GS\Gearstore\obj\Release\Gearstore.csprojResolveAssemblyReference.cache
-D:\Gearstore\GS\Gearstore\obj\Release\gearproj.Migrations.one.resources
-D:\Gearstore\GS\Gearstore\obj\Release\gearproj.Migrations.second.resources
-D:\Gearstore\GS\Gearstore\obj\Release\gearproj.Migrations.ssd.resources
-D:\Gearstore\GS\Gearstore\obj\Release\gearproj.Migrations.ssdd.resources
-D:\Gearstore\GS\Gearstore\obj\Release\Gearstore.csproj.GenerateResource.Cache
 D:\Gearstore\GS\Gearstore\obj\Release\Gearstore.dll
 D:\Gearstore\GS\Gearstore\obj\Release\Gearstore.pdb
 D:\Gearstore\GS\Gearstore\bin\roslyn\csi.exe.config

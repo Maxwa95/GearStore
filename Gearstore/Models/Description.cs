@@ -15,8 +15,8 @@ namespace Gearstore.Models
         [ForeignKey("Prod")]
         public int ProdId { get; set; }
         
-        public float Length { get; set; }
-        public float Size { get; set; }
+        public float? Length { get; set; }
+        public float? Size { get; set; }
       [Required]
         public string PartNumber { get; set; }
         [Required]
@@ -24,8 +24,9 @@ namespace Gearstore.Models
         [Required]
         public string MoreDetails { get; set; }
 
-        public int YearOfProduct { get; set; }
-      [JsonIgnore]
+        public DateTime YearOfProduct { get; set; }
+        [JsonIgnore]
+
         public Product Prod { get; set; }
 
 

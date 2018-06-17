@@ -18,19 +18,19 @@ namespace Gearstore.Controllers
 
         // POST: api/ConfirmOrder
         [Authorize(Roles = "Client")]
-        public IHttpActionResult Post([FromBody]cart[] values)
+        public IHttpActionResult Post([FromBody]Checkout cout)
         {
 
             if (ModelState.IsValid)
             {
-                foreach (var value in values)
+                orderinfo.OrderDate = DateTime.Now;
+                orderinfo.OrderStatus = "confirm";
+                 orderinfo.TotalCost = cout.total.ToString();
+                orderinfo.userid = User.Identity.GetUserId();
+                db.Orders.Add(orderinfo);
+                db.SaveChanges();
+                foreach (var value in cout.cart)
                 {
-                    orderinfo.OrderDate = DateTime.Now;
-                    orderinfo.OrderStatus = "confirm";
-                    orderinfo.TotalCost = value.totalcost;
-                    orderinfo.userid = User.Identity.GetUserId();
-                    db.Orders.Add(orderinfo);
-                    db.SaveChanges();
                     details.OrderId = orderinfo.OrderInfoId;
                     details.productId = value.product.productId;
                     details.Quantity = value.quantity;

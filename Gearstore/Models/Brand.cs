@@ -16,7 +16,9 @@ namespace Gearstore.Models
         public string BrandName { get; set; }
         public string ImagePath { get; set; }
         [JsonIgnore]
-        public virtual List<Model> models { get; set; } 
+        public virtual List<Model> models { get; set; }
+
+      //  public virtual NeededProducts needproduct { get; set; }
 
     }
 }
