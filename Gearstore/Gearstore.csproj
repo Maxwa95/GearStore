@@ -77,8 +77,8 @@
     <Reference Include="Microsoft.ApplicationInsights, Version=2.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.6.4\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.1\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.3\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -255,26 +255,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201806021819095_one.cs" />
-    <Compile Include="Migrations\201806021819095_one.Designer.cs">
-      <DependentUpon>201806021819095_one.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806031241235_second.cs" />
-    <Compile Include="Migrations\201806031241235_second.Designer.cs">
-      <DependentUpon>201806031241235_second.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806031547247_ssd.cs" />
-    <Compile Include="Migrations\201806031547247_ssd.Designer.cs">
-      <DependentUpon>201806031547247_ssd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806031549572_ssdd.cs" />
-    <Compile Include="Migrations\201806031549572_ssdd.Designer.cs">
-      <DependentUpon>201806031549572_ssdd.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
+    <Compile Include="Models\cart.cs" />
     <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\company.cs" />
     <Compile Include="Models\Description.cs" />
@@ -282,11 +267,11 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Model.cs" />
-    <Compile Include="Models\modelsproducts.cs" />
     <Compile Include="Models\NeededProducts.cs" />
     <Compile Include="Models\OrderDetails.cs" />
     <Compile Include="Models\OrderInfo.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Productdesc.cs" />
     <Compile Include="Models\productsearch.cs" />
     <Compile Include="Models\ShippingCompany.cs" />
     <Compile Include="Models\SimilaritiesProducts.cs" />
@@ -427,20 +412,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201806021819095_one.resx">
-      <DependentUpon>201806021819095_one.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806031241235_second.resx">
-      <DependentUpon>201806031241235_second.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806031547247_ssd.resx">
-      <DependentUpon>201806031547247_ssd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806031549572_ssdd.resx">
-      <DependentUpon>201806031549572_ssdd.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
